@@ -1,0 +1,32 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Celsius to Fahrenheit</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function c2f() {
+                var n = parseFloat(document.getElementById("txt").value);
+                var r = (n * 9/5) + 32;
+                document.getElementById("result").innerHTML = r+ " °F";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Temperature convertor </h1>
+                <input id="txt" type="text" placeholder="Enter Celsius">
+                <br>
+                <button onclick="c2f()">Convert to celcius</button>
+             
+                <p class="result" id="result"></p>
+            </div>
+        </header>
+    </body>
+    </html>
+    
+</body>
+</html>
